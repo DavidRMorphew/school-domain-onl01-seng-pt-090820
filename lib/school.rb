@@ -26,5 +26,8 @@ class School
 
     def sort
         @roster.each {|grade, names| names.sort!}
+        # sorted_hash = {}                      # this is good if you don't want to mutate the original hash, so that you can use it later
+        # @roster.each do |grade, names|
+        #     sorted_hash[grade] = names.sort
     end
 end
