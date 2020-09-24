@@ -15,4 +15,12 @@ class School
             @roster[grade]<<name
         end
     end
+
+    def grade(grade)
+        @roster[grade]
+    end
+
+    def sort
+        @roster.each {|grade, names| names.sort!}
+    end
 end
